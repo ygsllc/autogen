@@ -1,5 +1,3 @@
-# Let's create a PROPER Dockerfile with ONLY Docker instructions
-cat > Dockerfile << 'EOF'
 FROM python:3.11-slim
 
 WORKDIR /app
@@ -24,9 +22,3 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8081/ || exit 1
 
 CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
-EOF
-
-# Commit and push the corrected version
-git add Dockerfile
-git commit -m "Fix Dockerfile - remove shell commands, keep only Docker instructions"
-git push origin main
