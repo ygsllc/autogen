@@ -1,8 +1,4 @@
-# First, let's make sure we're in the right directory
-pwd
-# Should show: /Users/yatinkarnik/autogen
-
-# Replace the Dockerfile with the actual content
+# Replace the Dockerfile with the correct content (just the Docker instructions)
 cat > Dockerfile << 'EOF'
 # Official AutoGen Studio Dockerfile
 # This installs the official Microsoft AutoGen Studio via pip
@@ -42,9 +38,10 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
 EOF
 
-# Add and commit the changes
-git add Dockerfile
-git commit -m "Update Dockerfile with proper AutoGen Studio configuration"
+# Check the file looks correct now
+cat Dockerfile
 
-# Push to your repository
+# Add, commit, and push the corrected Dockerfile
+git add Dockerfile
+git commit -m "Fix Dockerfile content - remove shell commands"
 git push origin main
