@@ -98,10 +98,14 @@ class UISettings(BaseModel):
     show_agent_flow_by_default: bool = True
 
 
+def get_default_openai_api_key():
+    import os
+    return os.environ.get("OPENAI_API_KEY", "your-api-key")
+
 class SettingsConfig(BaseModel):
     environment: List[EnvironmentVariable] = []
     default_model_client: Optional[ComponentModel] = OpenAIChatCompletionClient(
-        model="gpt-4o-mini", api_key="your-api-key"
+        model="gpt-4.1-nano", api_key=get_default_openai_api_key()
     ).dump_component()
     ui: UISettings = UISettings()
 

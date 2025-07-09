@@ -33,7 +33,7 @@
             "description": "Chat completion client for OpenAI hosted models.",
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-4o-mini"
+              "model": "gpt-4.1-nano"
             }
           },
           "tools": [
@@ -87,7 +87,7 @@
             "description": "Chat completion client for OpenAI hosted models.",
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-4o-mini"
+              "model": "gpt-4.1-nano"
             }
           },
           "description": "an agent that solves tasks by browsing the web",
@@ -116,7 +116,7 @@
             "description": "Chat completion client for OpenAI hosted models.",
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-4o-mini"
+              "model": "gpt-4.1-nano"
             }
           },
           "tools": [],
@@ -159,7 +159,7 @@
         "description": "OpenAI GPT-4o-mini",
         "label": "OpenAI GPT-4o Mini",
         "config": {
-          "model": "gpt-4o-mini"
+          "model": "gpt-4.1-nano"
         }
       },
       {
@@ -188,7 +188,7 @@
         "description": "GPT-4o Mini Azure OpenAI model client.",
         "label": "AzureOpenAI GPT-4o-mini",
         "config": {
-          "model": "gpt-4o-mini",
+          "model": "gpt-4.1-nano",
           "api_key": "sk-...",
           "azure_endpoint": "https://{your-custom-endpoint}.openai.azure.com/",
           "azure_deployment": "{your-azure-deployment}",
@@ -472,7 +472,7 @@
                   "description": "Chat completion client for OpenAI hosted models.",
                   "label": "OpenAIChatCompletionClient",
                   "config": {
-                    "model": "gpt-4o-mini"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [
@@ -572,7 +572,7 @@
                   "description": "Chat completion client for OpenAI hosted models.",
                   "label": "OpenAIChatCompletionClient",
                   "config": {
-                    "model": "gpt-4o-mini"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [
@@ -626,7 +626,7 @@
                   "description": "Chat completion client for OpenAI hosted models.",
                   "label": "OpenAIChatCompletionClient",
                   "config": {
-                    "model": "gpt-4o-mini"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [],
@@ -656,7 +656,7 @@
             "description": "Chat completion client for OpenAI hosted models.",
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-4o-mini"
+              "model": "gpt-4.1-nano"
             }
           },
           "termination_condition": {
@@ -724,7 +724,7 @@
                   "description": "Chat completion client for OpenAI hosted models.",
                   "label": "OpenAIChatCompletionClient",
                   "config": {
-                    "model": "gpt-4o-mini"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "description": "an agent that solves tasks by browsing the web",
@@ -753,7 +753,7 @@
                   "description": "Chat completion client for OpenAI hosted models.",
                   "label": "OpenAIChatCompletionClient",
                   "config": {
-                    "model": "gpt-4o-mini"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [],
@@ -795,7 +795,7 @@
             "description": "Chat completion client for OpenAI hosted models.",
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-4o-mini"
+              "model": "gpt-4.1-nano"
             }
           },
           "termination_condition": {
@@ -864,7 +864,7 @@
                   "label": "OpenAIChatCompletionClient",
                   "config": {
                     "temperature": 0.7,
-                    "model": "gpt-4o"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [
@@ -970,7 +970,7 @@
                   "label": "OpenAIChatCompletionClient",
                   "config": {
                     "temperature": 0.7,
-                    "model": "gpt-4o"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [],
@@ -1009,7 +1009,7 @@
                   "label": "OpenAIChatCompletionClient",
                   "config": {
                     "temperature": 0.7,
-                    "model": "gpt-4o"
+                    "model": "gpt-4.1-nano"
                   }
                 },
                 "tools": [],
@@ -1040,7 +1040,7 @@
             "label": "OpenAIChatCompletionClient",
             "config": {
               "temperature": 0.7,
-              "model": "gpt-4o"
+              "model": "gpt-4.1-nano"
             }
           },
           "termination_condition": {
