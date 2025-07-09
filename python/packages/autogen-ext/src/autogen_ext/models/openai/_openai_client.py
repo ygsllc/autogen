@@ -1309,6 +1309,7 @@ class OpenAIChatCompletionClient(BaseOpenAIChatCompletionClient, Component[OpenA
 
             asyncio.run(main())
 
+
         To use structured output as well as function calling, you can use the following code snippet:
 
         .. code-block:: python
@@ -1347,7 +1348,7 @@ class OpenAIChatCompletionClient(BaseOpenAIChatCompletionClient, Component[OpenA
 
             async def main() -> None:
                 # Create an OpenAIChatCompletionClient instance.
-                model_client = OpenAIChatCompletionClient(model="gpt-4o-mini")
+                model_client = OpenAIChatCompletionClient(model="gpt-4.1-nano")
 
                 # Generate a response using the tool.
                 response1 = await model_client.create(

@@ -152,8 +152,8 @@ def create_default_gallery() -> GalleryConfig:
     )
 
     # Create base model client
-    base_model = OpenAIChatCompletionClient(model="gpt-4o-mini")
-    builder.add_model(base_model.dump_component(), label="OpenAI GPT-4o Mini", description="OpenAI GPT-4o-mini")
+    base_model = OpenAIChatCompletionClient(model="gpt-4.1-nano")
+    builder.add_model(base_model.dump_component(), label="OpenAI GPT-4.1 Nano", description="OpenAI GPT-4.1-nano")
     # Create Mistral vllm model
     mistral_vllm_model = OpenAIChatCompletionClient(
         model="TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
@@ -178,7 +178,7 @@ def create_default_gallery() -> GalleryConfig:
     # create an azure mode
     az_model_client = AzureOpenAIChatCompletionClient(
         azure_deployment="{your-azure-deployment}",
-        model="gpt-4o-mini",
+        model="gpt-4.1-nano",
         api_version="2024-06-01",
         azure_endpoint="https://{your-custom-endpoint}.openai.azure.com/",
         api_key="test",
@@ -337,7 +337,7 @@ Read the above conversation. Then select the next role from {participants} to pl
     )
 
     # Create deep research agent
-    model_client = OpenAIChatCompletionClient(model="gpt-4o", temperature=0.7)
+    model_client = OpenAIChatCompletionClient(model="gpt-4.1-nano", temperature=0.7)
 
     research_assistant = AssistantAgent(
         name="research_assistant",
